@@ -4,7 +4,6 @@
 
 .banner {
   background: yellow;
-  /* position: relative; */
   display: flex;
   margin: 5px;
   justify-content: center;
@@ -32,8 +31,10 @@
 .info {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
   padding: 5px;
   margin: 5px;
+  position: relative;
 }
 
 /* TODO Fix the div centering issue */
