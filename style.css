@@ -1,10 +1,15 @@
 .task-entry {
   background-color: rgba(167, 157, 157, 0.829);
   border: 2px solid black;
+  display: flex;
+  align-items: center;
+  margin: 2px;
+  padding: 2px;
+  justify-content: center;
 }
 
 .banner {
-  background: yellow;
+  background: rgba(52, 23, 9, 0.395);
   display: flex;
   margin: 2px;
   justify-content: center;
@@ -29,7 +34,7 @@
   justify-content: center;
   align-items: center;
   position: sticky;
-  left: 35%;
+  left: 82%;
 }
 
 .info {
