@@ -45,12 +45,19 @@
   margin: 5px;
 }
 
-/* TODO Fix the div centering issue */
 
 .item {
   display: flex;
   margin: 5px;
   justify-content: center;
-  padding: 5px;
-  border: 2px black solid;
+  /* padding: 5px; */
+  /* border: 2px black solid; */
+}
+
+#fname {
+  border: 2px solid black;
+}
+
+#form-label {
+  font-weight: bold;
 }
