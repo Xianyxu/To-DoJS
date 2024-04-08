@@ -1,3 +1,8 @@
+.root{
+  /* display: flex; */
+  align-items: safe;
+}
+
 .task-entry {
   background-color: rgba(167, 157, 157, 0.829);
   border: 2px solid black;
@@ -60,4 +65,24 @@
 
 #form-label {
   font-weight: bold;
+}
+
+.table-grid{
+  background-color: beige;
+  display: flex;
+  border: 2px solid black;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 1%;
+
+}
+
+.task-table{
+  display: flex;
+  width: 204px;
+  justify-content: center;
+  background-color: brown;
+  border-radius: 10px;
+  margin: 5px;
 }
