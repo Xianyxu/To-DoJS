@@ -1,6 +1,6 @@
-.root{
+.root {
   /* display: flex; */
-  align-items: safe;
+align-items: center;
 }
 
 .task-entry {
@@ -50,7 +50,6 @@
   margin: 5px;
 }
 
-
 .item {
   display: flex;
   margin: 5px;
@@ -67,22 +66,57 @@
   font-weight: bold;
 }
 
-.table-grid{
+.table-content-grid {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  /* flex-direction: column; */
+}
+
+.task-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(99, 92, 92, 0.253);
+  border-radius: 3px;
+  margin: 5px;
+  width: 200px;
+  padding: 5px;
+}
+
+.div-table {
   background-color: beige;
   display: flex;
+  flex-direction: column;
   border: 2px solid black;
-  border-radius: 10px;
+  border-radius: 3px;
   align-items: center;
   justify-content: center;
   padding: 1%;
-
 }
 
-.task-table{
+.table-head {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  /* align-self: self-start; */
+}
+
+.table-body {
+  text-align: center;
   display: flex;
-  width: 204px;
+  flex-direction: column;
+}
+
+.table-items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
-  background-color: brown;
-  border-radius: 10px;
-  margin: 5px;
+  background-color: rgba(99, 92, 92, 0.253);
+  border-radius: 3px;
+  margin: 2px;
+  padding: 5px;
+  text-align: left;
 }
