@@ -1,16 +1,15 @@
-.root {
-  /* display: flex; */
-align-items: center;
+* {
+  margin: 0;
+  /* background-color: black; */
 }
 
 .task-entry {
   background-color: rgba(167, 157, 157, 0.829);
-  border: 2px solid black;
   display: flex;
   align-items: center;
-  margin: 2px;
-  padding: 2px;
+  padding: 5px;
   justify-content: center;
+  border-bottom: 1px solid black;
 }
 
 .banner {
@@ -19,7 +18,7 @@ align-items: center;
   margin: 2px;
   justify-content: center;
   padding: 2px;
-  border: 2px solid black;
+  border: 1px solid black;
   font-size: 2em;
   box-sizing: border-box;
 }
@@ -30,8 +29,7 @@ align-items: center;
   flex-direction: row;
   background: gray;
   padding: 5px;
-  margin: auto;
-  border: 2px solid black;
+  border-bottom: 1px solid black;
 }
 
 .Navigator {
@@ -89,8 +87,7 @@ align-items: center;
   background-color: beige;
   display: flex;
   flex-direction: column;
-  border: 2px solid black;
-  border-radius: 3px;
+  border-bottom: 1px solid black;
   align-items: center;
   justify-content: center;
   padding: 1%;
