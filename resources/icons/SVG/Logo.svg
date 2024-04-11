@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 308.71 308.71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #b3b3b3;
+      }
+
+      .cls-3 {
+        fill: url(#radial-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="153.85" cy="154.97" fx="153.85" fy="154.97" r="116.28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bfbfbf"/>
+      <stop offset=".26" stop-color="#a7a7a7"/>
+      <stop offset=".75" stop-color="gray"/>
+      <stop offset="1" stop-color="#717171"/>
+    </radialGradient>
+  </defs>
+  <g id="Layer_3" data-name="Layer 3">
+    <g>
+      <rect class="cls-2" x="117.9" y="232.62" width="75.37" height="75.37" rx="17.04" ry="17.04" transform="translate(314.01 538.95) rotate(179.39)"/>
+      <rect class="cls-2" x="35.55" y="199.53" width="75.37" height="75.37" rx="17.04" ry="17.04" transform="translate(-40.39 457.94) rotate(-135.61)"/>
+      <rect class="cls-2" x=".72" y="117.9" width="75.37" height="75.37" rx="17.04" ry="17.04" transform="translate(-116.76 195.63) rotate(-90.61)"/>
+      <rect class="cls-2" x="33.81" y="35.55" width="75.37" height="75.37" rx="17.04" ry="17.04" transform="translate(-30.85 73.09) rotate(-45.61)"/>
+      <rect class="cls-2" x="115.44" y=".72" width="75.37" height="75.37" rx="17.04" ry="17.04" transform="translate(-.4 1.62) rotate(-.61)"/>
+      <rect class="cls-2" x="197.79" y="33.81" width="75.37" height="75.37" rx="17.04" ry="17.04" transform="translate(117.23 -144.33) rotate(44.39)"/>
+      <rect class="cls-2" x="232.62" y="115.44" width="75.37" height="75.37" rx="17.04" ry="17.04" transform="translate(420.56 -118.78) rotate(89.39)"/>
+      <rect class="cls-2" x="199.53" y="197.79" width="75.37" height="75.37" rx="17.04" ry="17.04" transform="translate(571.42 230.71) rotate(134.39)"/>
+    </g>
+    <ellipse id="OuterRing" class="cls-3" cx="153.85" cy="154.97" rx="119" ry="113.5"/>
+    <ellipse id="Inner_Ring" data-name="Inner Ring" class="cls-1" cx="154.35" cy="154.47" rx="54.61" ry="52.08"/>
+  </g>
+</svg>
