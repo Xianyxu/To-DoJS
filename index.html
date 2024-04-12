@@ -12,10 +12,12 @@
     <div class="root">
         <div class="container">
             <div class="info">
-                <!-- TODO: Add a div for logo and the name of the TO-DO -->
-
-                <div class="logo"><img src="resources/icons/SVG/Logo.svg" alt=""></div>
-                <div class="banner"><h2>To-Do</h2></div>  
+                <div class="logo">
+                    <img src="resources/icons/SVG/Logo.svg" alt="">
+                </div>
+                <div class="banner">
+                    <h2>To-Do</h2>
+                </div>
             </div>
             <nav class="Navigator">
                 <div class="item">
@@ -30,9 +32,9 @@
             </nav>
         </div>
         <div class="task-entry">
-            <form>
+            <form id="task-fill">
                 <label for="filling" id="form-label">Enter your task:</label>
-                <input type="text" id="fname" name="fname">
+                <input type="text" id="input-task" placeholder="tasks" onkeydown=task_save(this)>
             </form>
         </div>
 
@@ -93,5 +95,6 @@
         </div>
     </div>
 </body>
+<script src="app.js"></script>
 
 </html>
