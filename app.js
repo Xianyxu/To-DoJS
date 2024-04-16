@@ -17,10 +17,28 @@ function input_taskHandler(key_down) {
         console.log(input_data);
 
         let data = JSON.stringify(input_data);
+
+
+        
     }
 
 }
-   
+
+var htmlGet = document.querySelectorAll('.table-body');
+
+console.log(htmlGet[0].innerHTML);
+
+// function innerHTMLGet() {
+    
+//     var innerhtml = document.getElementsByClassName('table-body')
+
+//     console.log(innerhtml.innerHTML)
+// }
+
+// innerHTMLGet();
+
+
+
 
 
 
