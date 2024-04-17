@@ -1,17 +1,22 @@
 
 
+
+
+var htmlSet = document.querySelectorAll('.table-body');
+
+
+function add_data_to_list(task) {
+    htmlSet[0].innerHTML += `<div class="table-items">
+                            ${task}
+                        </div > `
+    console.log(htmlSet[0].innerHTML);
+}
+
+
 /**
  * @type HTMLInputElement
  */
 
-var htmlSet = document.querySelectorAll('.table-body');
-
-function add_data_to_list() {
-    htmlSet[0].innerHTML += `<div class="table-items">
-                            Lorem ipsum dolor sit amet.
-                        </div > `
-    console.log(htmlSet[0].innerHTML);
-}
 function input_taskHandler(key_down) {
 
     if (event.key === 'Enter') {
@@ -22,11 +27,11 @@ function input_taskHandler(key_down) {
         var input_data = {
             "task_input:": input.value,
         }
-        console.log(input_data);
+        console.log(key_down.value);
 
         // let data = JSON.stringify(input_data);
 
-        add_data_to_list();
+        add_data_to_list(key_down.value);
                 
     }
 
