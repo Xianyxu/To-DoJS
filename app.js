@@ -1,39 +1,35 @@
 
 
+/**
+ * @type HTMLInputElement
+ */
 
 
 var htmlSet = document.querySelectorAll('.table-body');
 
 
 function add_data_to_list(task) {
-    htmlSet[0].innerHTML += `<div class="table-items">
-                            ${task}
-                        </div > `
+    htmlSet[0].innerHTML += `<div class="table-items"> ${task} </div >`;
     console.log(htmlSet[0].innerHTML);
 }
 
 
-/**
- * @type HTMLInputElement
- */
 
 function input_taskHandler(key_down) {
 
-    if (event.key === 'Enter') {
-        event.preventDefault();
-        var input = document.getElementById("input-task");
-        console.log(key_down.value);
 
-        var input_data = {
-            "task_input:": input.value,
-        }
+    if (event.key === 'Enter') {
+        
+        event.preventDefault();
+
         console.log(key_down.value);
 
         // let data = JSON.stringify(input_data);
 
         add_data_to_list(key_down.value);
-                
+        
     }
+    
 
 }
 

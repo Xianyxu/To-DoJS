@@ -5,8 +5,8 @@
 }
 
 @font-face {
-  font-family: "Notosans";    
-  src: url("resources/fonts/NotoSans.ttf") format('truetype');
+  font-family: "Notosans";
+  src: url("resources/fonts/NotoSans.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
@@ -18,6 +18,7 @@
   padding: 5px;
   justify-content: center;
   border-bottom: 1px solid black;
+  flex-direction: row;
 }
 
 .info {
@@ -40,13 +41,11 @@
   grid-column-end: -1;
   /* background-color: rgba(0, 0, 0, 0.057); */
   text-align: justify;
-  padding-top: 1px
-  /* justify-content: center */
-  ;
+  padding-top: 1px /* justify-content: center */;
   /* box-sizing: border-box; */
 }
 
-.logo{
+.logo {
   object-fit: cover;
   padding: 5px;
   background-color: rgb(128, 128, 128);
@@ -138,3 +137,9 @@
   padding: 5px;
   text-align: left;
 }
+
+.task-fill {
+  display: flex;
+  ;align-items: self-start;
+}
+
