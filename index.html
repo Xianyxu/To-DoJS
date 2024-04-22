@@ -37,12 +37,12 @@
                     <label for="filling" id="form-label">Enter your task:</label>
                     <input type="text" id="input-task" placeholder="tasks" onkeydown=input_taskHandler(this)>
                 </div>
-                <div class="task-fill-child">
+                <!-- <div class="task-fill-child">
                     <label for="filling" id="table-creation">New Table</label>
                     <input type="text" id="input-task" placeholder="tasks" onkeydown=input_taskHandler(this)>
-                </div>
+                </div> -->
                 <div class="task-fill-child new-task-table">
-                    <input type="button" value="New Table">
+                    <input type="button" value="New Table" onkeydown=new_table(this)>
                 </div>
             </div>
         </div>
@@ -105,6 +105,6 @@
     </div>
 </body>
 
-<script src="app.js" type="module"></script>
+<script src="index.js" type="module"></script>
 
 </html>
