@@ -84,13 +84,6 @@
   font-weight: bold;
 }
 
-.table-content-grid {
-  display: flex;
-  justify-content: center;
-  width: auto;
-  height: auto;
-  /* flex-direction: column; */
-}
 
 .task-table {
   display: flex;
@@ -106,7 +99,7 @@
 .div-table {
   background-color: beige;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   border-bottom: 1px solid black;
   align-items: center;
   justify-content: center;
