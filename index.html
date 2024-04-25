@@ -35,7 +35,7 @@
             <div class="task-fill">
                 <form class="task">
                     <label for="filling" id="form-label">Enter your task:</label>
-                    <input type="text" id="input-task" placeholder="tasks" onkeydown=input_taskHandler(this)>
+                    <input type="text" id="input-task" placeholder="tasks" onkeydown=input_taskHandler(event)>
                 </form>
             </div>
         </div>
@@ -97,6 +97,8 @@
     </div>
 </body>
 
-<script src="js_index.js" type="module"></script>
+<script src="js_index.js">
+    input_taskHandler(ele)
+</script>
 
 </html>
