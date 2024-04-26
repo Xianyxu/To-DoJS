@@ -38,6 +38,9 @@
                     <input type="text" id="input-task" placeholder="tasks" onkeydown=input_taskHandler(event)>
                 </form>
             </div>
+            <div class="new-table">
+                <button id="new-table-btn"><img src="resources/icons/SVG/plus-solid.svg" alt="" height="10"></button>
+            </div>
         </div>
 
 
@@ -49,7 +52,7 @@
                     Tasks
                 </div>
                 <div class="table-body" id="div_table_items">
-                    <div class="table-items">
+                    <!-- <div class="table-items">
                         Lorem ipsum dolor sit amet.
                     </div>
                     <div class="table-items">
@@ -57,7 +60,7 @@
                     </div>
                     <div class="table-items">
                         Lorem ipsum dolor sit amet.
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -97,7 +100,7 @@
     </div>
 </body>
 
-<script src="js_index.js">
+<script src="js_index.js" type="module">
     input_taskHandler(ele)
 </script>
 
