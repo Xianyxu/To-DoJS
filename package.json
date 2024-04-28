@@ -16,9 +16,11 @@
     "console-browserify": "^1.2.0",
     "eslint": "^8.57.0",
     "globals": "^15.0.0",
+    "memfs": "^4.9.1",
     "path-browserify": "^1.0.1",
     "process": "^0.11.10",
     "typescript-eslint": "^7.7.1",
-    "util": "^0.12.5"
+    "util": "^0.12.5",
+    "vite-plugin-node-polyfills": "^0.21.0"
   }
 }
