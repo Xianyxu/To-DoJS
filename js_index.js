@@ -1,8 +1,10 @@
-import fs from 'fs';
+import fs from 'node:fs';
+// const json_file = require('./task_list.json')
 
 
 const table_body = document.querySelectorAll(".table-body");
 const input = document.getElementById("input-task")
+const new_table_button = document.getElementById("new-table-btn")
 
 
 
@@ -20,17 +22,36 @@ input.addEventListener("keypress", function (event) {
         }
 
         const data = JSON.stringify(json_object)
+        localStorage.setItem("task-list2", data)
 
-        fs.writeFileSync("./user.json", data, (err) => {
-            if (err) {
-                throw err;
-            }
-            console.log(`JSON data is saved.  ${data}`);
-        })
+        // fs.writeFileSync(json_file, data)
+        // console.log(data);
 
-        
+
     }
 
+})
+
+new_table_button.addEventListener("click", () => {
+    const new_func = document.querySelector(".div-table")
+    new_func.innerHTML += /*html*/ `
+    <div class="task-table">
+        <div class="table-head">
+            Tasks
+        </div>
+        <div class="table-body">
+            <div class="table-items">
+                
+            </div>
+            <div class="table-items">
+                
+            </div>
+            <div class="table-items">
+                
+            </div>
+        </div>
+    </div>`
+    console.log(new_func)
 })
 
 

@@ -126,6 +126,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
+  min-height: 20px;
   background-color: rgba(99, 92, 92, 0.253);
   border-radius: 3px;
   margin: 2px;
