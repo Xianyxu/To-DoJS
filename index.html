@@ -10,27 +10,25 @@
 
 <body>
     <div class="root">
-        <div class="container">
-            <div class="info">
-                <div class="logo">
-                    <img src="resources/icons/SVG/Logo.svg" alt="Unknown Logo">
-                </div>
-                <div class="banner">
-                    <h2>To-Do</h2>
+        <nav>
+            <div class="logo">
+                <img src="./resources/icons/SVG/Logo.svg" height="30">
+                <div>
+                    <h1>Tasks</h1>
                 </div>
             </div>
-            <nav class="Navigator">
-                <div class="item">
-                    <button onclick="window.location.href='pages/note-taking.html'">Text Editor</button>
-                </div>
-                <div class="item">
-                    <button>New Page 2</button>
-                </div>
-                <div class="item">
-                    <button>New Page 3</button>
-                </div>
-            </nav>
-        </div>
+            <div class="page-nav">
+                <button>
+                    <a href="./pages/about.html"> <p>About </p></a>
+                </button>
+                <button>
+                    <p>New Page 2</p>
+                </button>
+                <button>
+                    <p>New Page 3</p>
+                </button>
+            </div>
+        </nav>
         <div class="task-entry">
             <div class="task-fill">
                 <form class="task">
@@ -46,23 +44,14 @@
 
         <!-- Task Table -->
 
-        <div class="div-table">
+        <div class="div-table-grid">
             <div class="task-table">
                 <div class="table-head">
                     Tasks
                 </div>
-                <div class="table-body" id="div_table_items">
-                    <div class="table-items">
-                        <!-- Lorem ipsum dolor sit amet. -->
-                    </div>
-                    <div class="table-items">
-                        <!-- Lorem ipsum dolor sit amet. -->
-                    </div>
-                    <div class="table-items">
-                        <!-- Lorem ipsum dolor sit amet. -->
-                    </div>
-
+                <div class="table-body">
                 </div>
+                
             </div>
             <!-- <div class="task-table">
                 <div class="table-head">

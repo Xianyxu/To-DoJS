@@ -1,18 +1,49 @@
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/resources/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+
+
 * {
   margin: 0;
   /* margin-left: 10px; */
   /* background-color: rgba(52, 51, 51, 0.37); */
 }
 
-@font-face {
-  font-family: "Notosans";
-  src: url("/resources/fonts/NotoSans.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
+body {
+  background: #190e15;
+}
+
+
+nav {
+  display: flex;
+  background-color: #170e15;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  color: aqua;
+  margin-left: 5px;
+  font-family: Roboto-Bold;
+  font-size: 4ch;
+}
+
+.page-nav button {
+  background: none;
+  border: none;
+  color: #f2e6f3;
 }
 
 .task-entry {
-  background-color: rgba(167, 157, 157, 0.829);
+  background-color: rgb(242, 230, 243);
   display: flex;
   align-items: center;
   padding: 5px;
@@ -47,28 +78,7 @@
   /* box-sizing: border-box; */
 }
 
-.logo {
-  object-fit: cover;
-  padding: 5px;
-  background-color: rgb(128, 128, 128);
-}
 
-.container {
-  height: 45px;
-  display: flex;
-  flex-direction: row;
-  background: gray;
-  padding: 2px;
-  border-bottom: 1px solid black;
-}
-
-.Navigator {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: sticky;
-  left: 82%;
-}
 
 .item {
   display: flex;
@@ -90,21 +100,22 @@
 .task-table {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: rgba(99, 92, 92, 0.253);
   border-radius: 3px;
   margin: 5px;
   width: 200px;
   padding: 5px;
+  min-height: 200px;
 }
 
-.div-table {
-  background-color: beige;
+.div-table-grid {
+  background-color: rgb(64, 37, 64);
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid black;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 1%;
 }
 
@@ -139,8 +150,8 @@
   justify-content: space-between;
 }
 
-#new-table-btn {
-  object-fit: cover;
-  /* padding: 5px; */
-  background-color: rgb(128, 128, 128);
+.new-table button {
+  background: none;
+  border: none;
+
 }

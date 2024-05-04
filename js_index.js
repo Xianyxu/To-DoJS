@@ -13,7 +13,7 @@ input.addEventListener("keypress", function (event) {
     if (event.key === 'Enter') {
         // console.log(event.target.value);
         event.preventDefault();
-        table_body[0].innerHTML += `<div class="table-items">
+        table_body[0].innerHTML += /* html */ `<div class="table-items">
             ${event.target.value}
         </div>`
 
@@ -40,15 +40,7 @@ new_table_button.addEventListener("click", () => {
             Tasks
         </div>
         <div class="table-body">
-            <div class="table-items">
-                
-            </div>
-            <div class="table-items">
-                
-            </div>
-            <div class="table-items">
-                
-            </div>
+
         </div>
     </div>`
     console.log(new_func)
