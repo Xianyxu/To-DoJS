@@ -4,6 +4,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/resources/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
 
 * {
   margin: 0;
@@ -46,7 +52,6 @@ nav {
   background-color: rgb(242, 230, 243);
   display: flex;
   align-items: center;
-  padding: 5px;
   justify-content: space-between;
   border-bottom: 1px solid black;
   flex-direction: row;
@@ -101,19 +106,20 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: rgba(99, 92, 92, 0.253);
-  border-radius: 3px;
+  background-color: #b6abbf;
+  border-radius: 10px;
   margin: 5px;
   width: 200px;
   padding: 5px;
   min-height: 200px;
+  min-width: 200px;
 }
 
 .div-table-grid {
-  background-color: rgb(64, 37, 64);
+  border: none;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  border-bottom: 1px solid black;
   align-items: center;
   justify-content: flex-start;
   padding: 1%;
@@ -123,7 +129,21 @@ nav {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   /* align-self: self-start; */
+}
+
+.table-head div {
+  
+  
+  align-items: center;
+}
+
+.table-head button {
+  border: none;
+  background: none;
 }
 
 .table-body {
@@ -138,16 +158,22 @@ nav {
   flex-wrap: nowrap;
   justify-content: center;
   min-height: 20px;
-  background-color: rgba(99, 92, 92, 0.253);
+  background-color: #a3879b;
   border-radius: 3px;
   margin: 2px;
   padding: 5px;
   text-align: left;
+  font-family: Roboto-Regular;
 }
 
 .task-fill {
   display: flex;
   justify-content: space-between;
+}
+
+.task-fill form {
+  border: none;
+  background: none;
 }
 
 .new-table button {
