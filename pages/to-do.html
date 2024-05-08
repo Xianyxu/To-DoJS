@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <div class="root">
+        <nav>
+            <div class="logo">
+                <img src="/resources/icons/SVG/Logo.svg" height="30">
+                <div>
+                    <h1>Tasks</h1>
+                </div>
+            </div>
+            <div class="page-nav">
+                <button>
+                    <a href="/">
+                        <p>Root</p>
+                    </a>
+                </button>
+                <button>
+                    <a href="/pages/about.html">
+                        <p>About </p>
+                    </a>
+                </button>
+                <button>
+                    <p>New Page 2</p>
+                </button>
+                <button>
+                    <p>New Page 3</p>
+                </button>
+            </div>
+        </nav>
+        <div class="task-entry">
+            <div class="task-fill">
+                <form class="task">
+                    <label for="filling" id="form-label">Enter your task:</label>
+                    <input type="text" id="input-task" placeholder="tasks">
+                </form>
+            </div>
+            <div class="new-table">
+                <button id="new-table-btn"><img src="/resources/icons/SVG/plus-solid.svg" alt="" height="20"></button>
+            </div>
+        </div>
+
+
+        <!-- Task Table -->
+
+        <div class="div-table-grid">
+            <div class="task-table">
+                <div class="table-head">
+                    <div>
+                        <p>Tasks</p>
+                    </div>
+                    <div class="button-row">
+                        <button>
+                            <img src="/resources/icons/SVG/plus-solid.svg" height="30">
+                        </button>
+                        <button>
+                            <img src="/resources/icons/SVG/trashbin.svg" height="30">
+                        </button>
+                    </div>
+                </div>
+                <div class="table-body">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="../js_index.js" type="module">
+
+</script>
+
+</html>

@@ -8,6 +8,7 @@ const new_table_button = document.getElementById("new-table-btn")
 const tableItems = document.getElementsByClassName("table-items")
 const new_func = document.querySelector(".div-table-grid")
 
+
 let i = 0
 
 input.addEventListener("keypress", function (event) {
@@ -15,9 +16,11 @@ input.addEventListener("keypress", function (event) {
     if (event.key === 'Enter') {
         // console.log(event.target.value);
         event.preventDefault();
-        table_body[0].innerHTML += /* html */ `<div class="table-items">
-            ${event.target.value}
-        </div>`
+        table_body[0].innerHTML += /* html */ `
+        <div class="table-items">
+            <p>${event.target.value}</p>
+        </div>
+        `
 
 
 
@@ -43,6 +46,7 @@ input.addEventListener("keypress", function (event) {
 
 })
 
+
 i += i
 
 
@@ -56,13 +60,37 @@ new_table_button.addEventListener("click", () => {
                     </div>
 
                     <button>
-                        <img src="./resources/icons/SVG/trashbin.svg" height="30">
+                        <img src="../resources/icons/SVG/trashbin.svg" height="30">
                     </button>
                 </div>
                 <div class="table-body">
                 </div>
             </div>
     `
+})
+
+
+
+
+
+table_body[0].addEventListener('mouseover', () => {
+
+
+    let i = 0
+    i++
+
+    if (table_body[0].children[0].childElementCount <= 1) {
+        table_body[0].children[0].innerHTML += /* html */ `
+        <div class="table-items-onhover">
+            <button >
+                <img src="/resources/icons/SVG/trash-can-solid.svg" height=15>
+            </button>
+        </div>
+    `
+    }
+    
+    console.log(table_body[0].children[0].innerHTML)
+
 })
 
 
@@ -78,4 +106,4 @@ new_table_button.addEventListener("click", () => {
 //     }
 // }
 
-console.log(table_body[0].innerHTML);
+// console.log(table_body[0].innerHTML);

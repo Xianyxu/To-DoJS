@@ -17,6 +17,11 @@
   /* background-color: rgba(52, 51, 51, 0.37); */
 }
 
+button {
+  background: none;
+  border: none;
+}
+
 body {
   background: #190e15;
 }
@@ -154,7 +159,7 @@ nav {
 
 .table-items {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
   min-height: 20px;
@@ -164,6 +169,20 @@ nav {
   padding: 5px;
   text-align: left;
   font-family: Roboto-Regular;
+}
+
+.table-items:hover{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  min-height: 20px;
+  background-color: #f452c6;
+  border-radius: 3px;
+  margin: 2px;
+  padding: 5px;
+  text-align: left;
+  font-family: Roboto-Regular;
+
 }
 
 .task-fill {
@@ -181,3 +200,4 @@ nav {
   border: none;
 
 }
+
