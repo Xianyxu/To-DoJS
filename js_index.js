@@ -22,10 +22,6 @@ input.addEventListener("keypress", function (event) {
         </div>
         `
 
-
-
-
-
         const json_object = {
             "tasks": event.target.value
         }
@@ -34,13 +30,8 @@ input.addEventListener("keypress", function (event) {
 
         ++i
 
-
         const data = JSON.stringify(json_object)
         localStorage.setItem("task-list2", data)
-
-        // fs.writeFileSync(json_file, data)
-        // console.log(data);
-
 
     }
 
@@ -70,9 +61,6 @@ new_table_button.addEventListener("click", () => {
 })
 
 
-
-
-
 table_body[0].addEventListener('mouseover', () => {
 
 
@@ -93,17 +81,13 @@ table_body[0].addEventListener('mouseover', () => {
 
 })
 
+table_body[0].addEventListener("mouseout", () => {
+    const remove_candidate = document.getElementsByClassName("table-items-onhover")
 
+    if (table_body[0].children[0].childElementCount > 1) {
 
-// function input_taskHandler(ele) {
-//     // const input_task_value = input.value;
-//     if (event.key === 'Enter') {
-//         console.log()
-//         event.preventDefault();
-//         table_body[0].innerHTML += `<div class="table-items">
-//             ${input_task_value}
-//         </div>`
-//     }
-// }
+        remove_candidate[0].remove()
+    }
 
-// console.log(table_body[0].innerHTML);
+})
+
