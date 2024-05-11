@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+
 // const json_file = require('./task_list.json')
 
 
@@ -26,6 +27,8 @@ input.addEventListener("keypress", function (event) {
 })
 
 
+
+
 new_table_button.addEventListener("click", () => {
 
     new_func.innerHTML += /*html*/ `
@@ -46,7 +49,8 @@ new_table_button.addEventListener("click", () => {
 })
 
 
-table_body.addEventListener('mouseover', () => {
+table_body.addEventListener('mouseover', (event) => {
+
 
     if (table_body.children[0].childElementCount <= 1) {
         table_body.children[0].innerHTML += /* html */ `
@@ -56,9 +60,10 @@ table_body.addEventListener('mouseover', () => {
             </button>
         </div>
     `
-        
-        console.log(table_body.children[0].innerHTML)
+
     }
+
+    console.log(table_body.children[1])
     
     
 
