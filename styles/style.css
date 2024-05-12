@@ -206,15 +206,26 @@ nav {
   margin-left: 15px;
   margin-top: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: row;
 }
 
 .index-page-nav button {
-  padding: 5px;
+  padding: 15px;
   border: #f2e6f3 solid;
+  border-radius: 15px;
+  margin: 15px;
+  height: 60px;
 }
 
 .index-page-nav a:visited {
   color: white;
+}
+
+.index-page-nav div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+
 }
