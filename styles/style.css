@@ -217,23 +217,29 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 
 .index-page-nav p {
   margin-left: 10px;
 }
 
-.index-page-nav button {
-  height: 40px;
-  width: 120px;
-  margin: 15px;
+.nav-button{
+margin: 12px;
 }
 
-.index-page-nav button:hover {
+.nav-button:hover {
   background-color: #231f22;
   border-radius: 15px;
   box-shadow: 1px 1px 5px #828182;
   
+}
+
+.index-page-nav a {
+  padding: 5px;
+  color: rgb(71, 74, 150);
+  font-family: monospace;
+  font-size: 2vh;
 }
 
 .index-page-nav a:hover {
@@ -241,6 +247,6 @@ a {
 }
 
 .index-page-nav img {
-  height: 20px;
+  height: 30px;
 }
 
