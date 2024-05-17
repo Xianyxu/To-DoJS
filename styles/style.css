@@ -203,14 +203,10 @@ a {
 .index-page-nav {
   margin-left: 15px;
   margin-top: 15px;
-  display: flex;
+  display: grid;
+  grid-gap: 10px;
   justify-content: flex-start;
-  flex-direction: column;
   border-right: 1px white solid;
-  width: 200px;
-  height: 100vh;
-  position: fixed;
-  
 }
 
 .index-page-nav div {
@@ -225,7 +221,7 @@ a {
 }
 
 .nav-button{
-margin: 12px;
+
 }
 
 .nav-button:hover {
@@ -240,6 +236,13 @@ margin: 12px;
   color: rgb(71, 74, 150);
   font-family: monospace;
   font-size: 2vh;
+  width: 200px;
+  background-color: rgb(48, 51, 53);
+  border-radius: 15px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  
 }
 
 .index-page-nav a:hover {
